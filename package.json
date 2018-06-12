@@ -6,8 +6,15 @@
   "dependencies": {
     "netlify-cli": "^1.2.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "ts-loader": "^4.4.1",
+    "typescript": "^2.9.1",
+    "webpack": "^4.12.0",
+    "webpack-command": "^0.2.1"
+  },
   "scripts": {
+    "build": "webpack",
+    "watch": "webpack -w",
     "deploy": "netlify deploy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

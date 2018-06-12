@@ -62,3 +62,6 @@ typings/
 
 # Netlify
 .netlify
+
+# JS assets
+public/*.js
