@@ -6,7 +6,12 @@
     "strict": true,
     "sourceMap": true,
     "target": "es5",
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "jsx": "react",
+    "lib": [
+      "DOM",
+      "ES2017"
+    ]
   },
   "include": [
     "src/**/*"

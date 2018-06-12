@@ -1,6 +1,6 @@
 module.exports = {
   mode: 'development',
-  entry: './src/main.ts',
+  entry: './src/main.tsx',
   output: {
     path: `${__dirname}/public`,
     filename: 'main.js'

@@ -4,9 +4,13 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "netlify-cli": "^1.2.2"
+    "netlify-cli": "^1.2.2",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0"
   },
   "devDependencies": {
+    "@types/react": "^16.3.17",
+    "@types/react-dom": "^16.0.6",
     "ts-loader": "^4.4.1",
     "typescript": "^2.9.1",
     "webpack": "^4.12.0",
