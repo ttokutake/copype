@@ -1,0 +1,24 @@
+{
+  "name": "copype",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "netlify-cli": "^1.2.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "deploy": "netlify deploy",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ttokutake/copype.git"
+  },
+  "author": "ttokutake",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ttokutake/copype/issues"
+  },
+  "homepage": "https://github.com/ttokutake/copype#readme"
+}
