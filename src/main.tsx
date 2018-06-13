@@ -11,17 +11,28 @@ const Button = styled.button`
 `;
 
 class App extends React.Component {
-  copy(): boolean {
-    const textArea: HTMLTextAreaElement = document.getElementsByName("text")[0] as HTMLTextAreaElement;
+  static getTextArea() {
+    return document.getElementsByName("text")[0] as HTMLTextAreaElement;
+  }
+
+  static copy(): boolean {
+    const textArea: HTMLTextAreaElement = App.getTextArea();
     textArea.focus();
     textArea.select();
     return document.execCommand('copy');
   }
 
+  static clear() {
+    const textArea: HTMLTextAreaElement = App.getTextArea();
+    textArea.value = '';
+    textArea.focus();
+  }
+
   render() {
     return (
       <div>
-        <Button name="copy" onClick={this.copy}>Copy</Button>
+        <Button name="copy" onClick={App.copy}>Copy</Button>
+        <Button name="clear" onClick={App.clear}>Clear</Button>
         <TextArea name="text"></TextArea>
       </div>
     );
