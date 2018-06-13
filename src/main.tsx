@@ -11,8 +11,11 @@ const Button = styled.button`
 `;
 
 class App extends React.Component {
-  copy() {
-    console.log("hello");
+  copy(): boolean {
+    const textArea: HTMLTextAreaElement = document.getElementsByName("text")[0] as HTMLTextAreaElement;
+    textArea.focus();
+    textArea.select();
+    return document.execCommand('copy');
   }
 
   render() {
