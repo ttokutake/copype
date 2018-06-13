@@ -11,6 +11,20 @@ const Button = styled.button`
 `;
 
 class App extends React.Component {
+  componentDidMount() {
+    document.addEventListener("paste", (e: Event) => {
+      e.preventDefault();
+      const item = (e as ClipboardEvent).clipboardData.items[0];
+      item.getAsString((domString) => {
+        const textArea = App.getTextArea();
+        textArea.value = domString;
+        textArea.focus();
+        textArea.select();
+        // Cannot use `document.execCommand("copy"))` here
+      });
+    });
+  }
+
   static getTextArea() {
     return document.getElementsByName("text")[0] as HTMLTextAreaElement;
   }
