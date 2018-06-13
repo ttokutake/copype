@@ -1,5 +1,6 @@
 module.exports = {
   mode: 'development',
+  devtool: "inline-source-map",
   entry: './src/main.tsx',
   output: {
     path: `${__dirname}/public`,
@@ -14,6 +15,6 @@ module.exports = {
     ]
   },
   resolve: {
-    extensions: ['.ts', '.tsx', '.js', '.json'],
+    extensions: ['.ts', '.tsx', '.js'],
   }
 };
