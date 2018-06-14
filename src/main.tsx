@@ -20,7 +20,7 @@ class App extends React.Component {
         textArea.value = domString;
         textArea.focus();
         textArea.select();
-        // Cannot use `document.execCommand("copy"))` here
+        // Cannot use `document.execCommand("copy")` here
       });
     });
   }
