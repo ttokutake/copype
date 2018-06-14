@@ -1,5 +1,5 @@
 module.exports = {
-  mode: 'development',
+  mode: process.env.NODE_ENV === 'prod' ? 'production' : 'development',
   devtool: "inline-source-map",
   entry: './src/main.tsx',
   output: {
