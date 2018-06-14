@@ -1,14 +1,9 @@
 import * as React    from "react";
 import * as ReactDOM from "react-dom";
-import styled from "styled-components";
 
-const TextArea = styled.textarea`
-  height: 90%;
-  width: 100%;
-`;
-
-const Button = styled.button`
-`;
+import {Button} from 'office-ui-fabric-react/lib/Button';
+import {Fabric} from 'office-ui-fabric-react/lib/Fabric';
+import {TextField} from 'office-ui-fabric-react/lib/TextField';
 
 class App extends React.Component {
   componentDidMount() {
@@ -44,11 +39,11 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <Fabric>
         <Button name="copy" onClick={App.copy}>Copy</Button>
         <Button name="clear" onClick={App.clear}>Clear</Button>
-        <TextArea name="text"></TextArea>
-      </div>
+        <TextField name="text" multiline={true}></TextField>
+      </Fabric>
     );
   }
 }
