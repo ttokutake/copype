@@ -42,7 +42,7 @@ class App extends React.Component {
       <Fabric>
         <Button name="copy" onClick={App.copy}>Copy</Button>
         <Button name="clear" onClick={App.clear}>Clear</Button>
-        <TextField name="text" multiline={true}></TextField>
+        <TextField name="text" multiline={true} style={{width: '100%', height: '95%'}}></TextField>
       </Fabric>
     );
   }
